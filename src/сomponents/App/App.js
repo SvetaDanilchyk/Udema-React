@@ -10,6 +10,27 @@ import { EmployeesAddForm } from '../EmployeesAddForm';
 import './App.css';
 
 export const App = () => {
+
+    
+  const data = [
+    {
+      id:1,
+      name:"Jon S",
+      salary: 800
+    },
+    {
+      id:2,
+      name:"David K",
+      salary: 1500
+    },
+    {
+      id:3,
+      name:"Kate Z",
+      salary: 1000
+    }
+  ];
+
+  
   return (
     <div className="app">
         <Info/>
@@ -19,7 +40,7 @@ export const App = () => {
             <Filter/>
         </div>
 
-        <EmployeesList/>
+        <EmployeesList data = {data}/>
         <EmployeesAddForm/>
     </div>
   );
